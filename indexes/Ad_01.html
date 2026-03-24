@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oatly Ad 01</title>
+
+  <style>
+    @font-face {
+      font-family: "GirdoBlack";
+      src: url("../fonts/GirdoBlackPro-Regular.a40bd0fc.woff") format("woff");
+    }
+
+    @font-face {
+      font-family: "FKGrotesk";
+      src: url("../fonts/FKGroteskNeue.woff2") format("woff2");
+    }
+
+    @font-face {
+      font-family: "Margo";
+      src: url("../fonts/MargoPro-Regular.adcdb6c7.woff") format("woff");
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #efece6;
+      font-family: "FKGrotesk", Arial, sans-serif;
+    }
+
+    .poster {
+      width: 1200px;
+      max-width: 95vw;
+      min-height: 700px;
+      background: #efece6;
+      border: 3px solid #000;
+      box-sizing: border-box;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 22px;
+      background: #7fb5d6;
+    }
+
+    .left {
+      padding: 80px 60px 60px 60px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .headline {
+      font-family: "GirdoBlack", "FKGrotesk", Arial, sans-serif;
+      font-size: 110px;
+      line-height: 0.9;
+      text-transform: uppercase;
+      margin: 20px 0 30px 0;
+    }
+
+    .underline {
+      width: 150px;
+      height: 7px;
+      background: #7fb5d6;
+      margin: 0 0 28px 0;
+    }
+
+    .subtext {
+      font-family: "Margo", "FKGrotesk", Arial, sans-serif;
+      font-size: 36px;
+      line-height: 1.25;
+      max-width: 520px;
+      margin: 0;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+
+    /* RIGHT SIDE IMAGE (NO BOX) */
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .right img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    @media (max-width: 950px) {
+      .poster {
+        grid-template-columns: 1fr;
+      }
+
+      .headline {
+        font-size: 80px;
+      }
+
+      .subtext {
+        font-size: 28px;
+      }
+
+      .right {
+        padding: 20px 40px 60px 40px;
+      }
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 25px;
+
+      font-family: "GirdoBlack", Arial, sans-serif;
+      font-size: 22px;
+
+      text-decoration: none;
+      color: black;
+
+      border: 2px solid black;
+      padding: 8px 16px;
+      background: #efece6;
+
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .back-button:hover {
+      background: black;
+      color: #efece6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="poster">
+    <div class="accent"></div>
+
+    <div class="left">
+      <h1 class="headline">WE HATE<br>COWS</h1>
+
+      <div class="underline"></div>
+
+      <p class="subtext">
+        Okay, we don’t hate cows.<br>
+        We just think it’s kind of weird.
+      </p>
+    </div>
+
+    <div class="right">
+      <img src="../png/Cow.png" alt="Cow visual" />
+    </div>
+  </div>
+  <a href="../index.html" class="back-button">BACK</a>
+</body>
+
+</html>

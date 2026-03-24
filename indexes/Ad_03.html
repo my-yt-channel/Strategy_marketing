@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oatly Ad 03</title>
+
+  <style>
+    @font-face {
+      font-family: "GirdoBlack";
+      src: url("../fonts/GirdoBlackPro-Regular.a40bd0fc.woff") format("woff");
+    }
+
+    @font-face {
+      font-family: "FKGrotesk";
+      src: url("../fonts/FKGroteskNeue.woff2") format("woff2");
+    }
+
+    @font-face {
+      font-family: "Margo";
+      src: url("../fonts/MargoPro-Regular.adcdb6c7.woff") format("woff");
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #efece6;
+      font-family: "FKGrotesk", Arial, sans-serif;
+    }
+
+    .poster {
+      width: 1200px;
+      max-width: 95vw;
+      min-height: 700px;
+
+      background: url("../png/Blue_background.jpg");
+      background-repeat: repeat;
+      background-size: auto;
+
+      border: 3px solid #000;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      padding: 90px 80px 70px 80px;
+    }
+
+    /* 🔥 readability overlay */
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .poster > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 22px;
+      background: #7fb5d6;
+      z-index: 2;
+    }
+
+    .headline {
+      font-family: "GirdoBlack", "FKGrotesk", Arial, sans-serif;
+      font-size: 120px;
+      line-height: 0.9;
+      text-transform: uppercase;
+      margin: 40px 0 30px 0;
+      text-align: center;
+      color: #000;
+    }
+
+    .underline {
+      width: 170px;
+      height: 7px;
+      background: #000;
+      margin: 0 auto 35px auto;
+    }
+
+    .subtext {
+      font-family: "Margo", "FKGrotesk", Arial, sans-serif;
+      font-size: 40px;
+      line-height: 1.2;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 620px;
+      letter-spacing: 0.3px;
+      color: #111;
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 25px;
+
+      font-family: "GirdoBlack", Arial, sans-serif;
+      font-size: 22px;
+
+      text-decoration: none;
+      color: black;
+
+      border: 2px solid black;
+      padding: 8px 16px;
+      background: #efece6;
+
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .back-button:hover {
+      background: black;
+      color: #efece6;
+    }
+
+    @media (max-width: 950px) {
+      .poster {
+        padding: 80px 40px 90px 40px;
+      }
+
+      .headline {
+        font-size: 78px;
+      }
+
+      .subtext {
+        font-size: 30px;
+        max-width: 100%;
+      }
+    }
+    .tractor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: auto;
+
+  display: block;
+  pointer-events: none; /* prevents weird interactions */
+}
+  </style>
+</head>
+<body>
+  <div class="poster">
+
+    <h1 class="headline">YOU DRINK<br>THAT?</h1>
+
+    <div class="underline"></div>
+
+    <p class="subtext">
+      We did too.<br>
+      Then we thought about it.
+    </p>
+    <img src="../png/tractor.png" alt="Tractor" class="tractor">
+  </div>
+
+  <a href="../index.html" class="back-button">BACK</a>
+</body>
+</html>
