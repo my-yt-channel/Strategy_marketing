@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "GirdoBlack";
+  src: url("../assets/fonts/GirdoBlackPro-Regular.a40bd0fc.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FKGrotesk";
+  src: url("../assets/fonts/FKGroteskNeue.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Margo";
+  src: url("../assets/fonts/MargoPro-Regular.adcdb6c7.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efece6;
+  font-family: "FKGrotesk", Arial, sans-serif;
+}
+
+.poster {
+  width: 1200px;
+  max-width: 95vw;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #7fb5d6;
+}
+
+.headline {
+  font-family: "GirdoBlack", "FKGrotesk", Arial, sans-serif;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.subtext {
+  font-family: "Margo", "FKGrotesk", Arial, sans-serif;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  left: 25px;
+  font-family: "GirdoBlack", Arial, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 16px;
+  background: #efece6;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  background: black;
+  color: #efece6;
+  transform: translateY(-2px);
+}
+
+.logo {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  width: 140px;
+  height: auto;
+  opacity: 0.95;
+}
+
+/* ========================= */
+/* DEFAULT AD LAYOUT (AD 01 / AD 02 / AD 04) */
+/* ========================= */
+
+.poster {
+  min-height: auto;
+  background: #efece6;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.accent {
+  height: 12px;
+}
+
+.left {
+  padding: 40px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  font-size: clamp(48px, 9vw, 110px);
+  margin: 20px 0 30px 0;
+}
+
+.underline {
+  width: 150px;
+  height: 7px;
+  background: #7fb5d6;
+  margin: 0 0 28px 0;
+}
+
+.subtext {
+  font-size: clamp(18px, 3.5vw, 36px);
+  line-height: 1.25;
+  max-width: 520px;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 40px 20px;
+}
+
+.right img:not(.logo) {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* ========================= */
+/* AD 03 SPECIFIC STYLES */
+/* ========================= */
+
+body.ad-03 .poster {
+  min-height: 700px;
+  background: url("../assets/images/Blue_background.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+  overflow: hidden;
+  padding: 90px 80px 70px 80px;
+  display: block;
+}
+
+body.ad-03 .poster::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+body.ad-03 .poster > * {
+  position: relative;
+  z-index: 1;
+}
+
+body.ad-03 .accent {
+  height: 22px;
+  z-index: 2;
+}
+
+body.ad-03 .headline {
+  font-size: clamp(50px, 10vw, 120px);
+  margin: 40px 0 40px 0;
+  text-align: center;
+  color: #000;
+}
+
+body.ad-03 .underline {
+  width: 170px;
+  height: 7px;
+  background: #000;
+  margin: 30px auto;
+  display: block;
+}
+
+body.ad-03 .subtext {
+  font-size: clamp(20px, 4vw, 40px);
+  line-height: 1.15;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 620px;
+  letter-spacing: 0.3px;
+  color: #111;
+}
+
+body.ad-03 .tractor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 950px) {
+  .poster {
+    grid-template-columns: 1fr;
+  }
+
+  .headline {
+    font-size: 80px;
+  }
+
+  .subtext {
+    font-size: 28px;
+  }
+
+  .right {
+    padding: 20px 40px 60px 40px;
+  }
+
+  .logo {
+    width: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  body.ad-03 .poster {
+    padding: 80px 40px 90px 40px;
+    min-height: auto;
+  }
+
+  body.ad-03 .accent {
+    height: 12px;
+  }
+}
