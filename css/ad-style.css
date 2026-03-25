@@ -81,7 +81,7 @@ body {
 }
 
 /* ========================= */
-/* DEFAULT AD LAYOUT (AD 01 / AD 02 / AD 04) */
+/* DEFAULT AD LAYOUT (AD 01) */
 /* ========================= */
 
 .poster {
@@ -137,7 +137,7 @@ body {
 }
 
 /* ========================= */
-/* AD 03 SPECIFIC STYLES */
+/* Video AD SPECIFIC STYLES */
 /* ========================= */
 
 body.Video-Ad .poster {
@@ -148,6 +148,11 @@ body.Video-Ad .poster {
   position: relative;
   padding: 90px 80px 180px 80px;
   display: block;
+}
+body.Video-Part-1 .poster {
+  background: url("../assets/images/Pink_background.png");
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 body.Video-Ad .poster::before {
