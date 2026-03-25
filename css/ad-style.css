@@ -337,7 +337,7 @@ body.Ad-04 .poster > *:not(.oatly-tag) {
   top: 155px;
   left: 350px;
   font-family: "UrbanHeroes", Arial, sans-serif;
-  font-size: clamp(70px, 7vw, 110px);
+  font-size: clamp(100px, 10vw, 180px);
   line-height: 0.9;
   transform: rotate(-10deg);
 }
