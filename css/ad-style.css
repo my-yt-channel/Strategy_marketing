@@ -240,7 +240,8 @@ body.Video-Ad .tractor {
     min-height: auto;
   }
 
-  body.Video-Ad .accent {
-    height: 12px;
-  }
+body.Video-Ad .tractor {
+  width: 120%;
+  left: -10%;
+}
 }
