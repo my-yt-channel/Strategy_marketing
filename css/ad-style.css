@@ -345,7 +345,7 @@ body.Ad-04 .poster > *:not(.oatly-tag) {
 }
 
 .tag-small {
-  top: 250px;
+  top: 270px;
   left: 770px;
   font-family: "UrbanHeroes", Arial, sans-serif;
   font-size: clamp(50px, 5vw, 80px);
@@ -353,8 +353,8 @@ body.Ad-04 .poster > *:not(.oatly-tag) {
 }
 
 .tag-question {
-  top: 30px;
-  right: 20px;
+  top: 20px;
+  right: 15px;
   font-family: "UrbanHeroes", Arial, sans-serif;
   font-size: clamp(50px, 5vw, 80px);
   transform: rotate(14deg);
