@@ -236,9 +236,10 @@ body.Video-Ad .tractor {
 /* ========================= */
 body.Ad-04 {
   background-image: url("../assets/images/brick_wall.avif");
-  background-size: cover;
+  background-size: 700px auto;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+}kground-repeat: no-repeat;
 }
 body.Ad-04::before {
   content: "";
