@@ -260,7 +260,7 @@ body.Video-Ad .tractor {
   }
 
   body.Video-Ad .tractor {
-    left: -20;
+    left: -20px;
     width: 120%;
   }
 }
