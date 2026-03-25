@@ -140,7 +140,7 @@ body {
 /* AD 03 SPECIFIC STYLES */
 /* ========================= */
 
-body.ad-03 .poster {
+body.Video-Ad .poster {
   min-height: 700px;
   background: url("../assets/images/Blue_background.jpg");
   background-repeat: repeat;
@@ -150,31 +150,31 @@ body.ad-03 .poster {
   display: block;
 }
 
-body.ad-03 .poster::before {
+body.Video-Ad .poster::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.25);
 }
 
-body.ad-03 .poster > * {
+body.Video-Ad .poster > * {
   position: relative;
   z-index: 1;
 }
 
-body.ad-03 .accent {
+body.Video-Ad .accent {
   height: 22px;
   z-index: 2;
 }
 
-body.ad-03 .headline {
+body.Video-Ad .headline {
   font-size: clamp(50px, 10vw, 120px);
   margin: 40px 0 40px 0;
   text-align: center;
   color: #000;
 }
 
-body.ad-03 .underline {
+body.Video-Ad .underline {
   width: 170px;
   height: 7px;
   background: #000;
@@ -182,7 +182,7 @@ body.ad-03 .underline {
   display: block;
 }
 
-body.ad-03 .subtext {
+body.Video-Ad .subtext {
   font-size: clamp(20px, 4vw, 40px);
   line-height: 1.15;
   text-align: center;
@@ -192,7 +192,7 @@ body.ad-03 .subtext {
   color: #111;
 }
 
-body.ad-03 .tractor {
+body.Video-Ad .tractor {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -230,12 +230,12 @@ body.ad-03 .tractor {
     right: 15px;
   }
 
-  body.ad-03 .poster {
+  body.Video-Ad .poster {
     padding: 80px 40px 90px 40px;
     min-height: auto;
   }
 
-  body.ad-03 .accent {
+  body.Video-Ad .accent {
     height: 12px;
   }
 }
